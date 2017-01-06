@@ -5,7 +5,7 @@ function test(){
 
 var prob = [];
 var query = document.getElementById( "query1" ).value;
-url="http://codeforces.com/api/problemset.problems?tags="+query;
+url="https://codeforces.com/api/problemset.problems?tags="+query;
 
 var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
@@ -17,7 +17,7 @@ request.onreadystatechange = function() {
             $.each(problems,function(i,item){
               var id=problems[i].contestId;
               var itt=problems[i].index;
-              theUrl="http://codeforces.com/problemset/problem/"+id+"/"+itt;
+              theUrl="https://codeforces.com/problemset/problem/"+id+"/"+itt;
               console.log(theUrl);
               httpGet(theUrl);
               });
