@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pranay Yelugam</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
+   <script type="text/javascript" src="main.js"></script>
+   <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+<div class="jumbotron">
+<h1 align="center">Codeforces problem search</h1>
+</div>
+<div class="container">
+<div class="col-sm-8">
+<form>
+  <input type="text" name="query" placeholder="search me" id="query1">
+</form>
+<button class="btn btn-primary" align="center" onclick="test()" id="btn1">search</button>
+        <br>
+        <br>
+        <p id="message"></p>
+        
+       <p>Filename to Save As:</p>
+        <input id="inputFileNameToSaveAs" placeholder="enter filename.html "></input>
+        <button  class=" btn btn-primary"onclick="saveTextAsFile()" id="btn2">click to download the File</button>
+    </div>
+    <div class="col-sm-4">
+      <h2>
+          Search by tags:
+      </h2>
+      <p> 
+      dp<br>
+      greedy<br>
+      math<br>
+      number theory
+      <br>
+      are some of the examples.
+      <br>
+      For more tags visit : <a href="http://codeforces.com/">codeforces.com</a>
+      </p>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
